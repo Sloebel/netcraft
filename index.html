@@ -37,6 +37,73 @@
 				</ul>
 			</li>
 		</ul>
+
+		<table border="1">
+			<caption>header for the whole table</caption>
+			<tr>
+				<th></th>
+				<th>header1</th>
+				<th>header2</th>
+				<th>header3</th>
+			</tr>
+			<tr>
+				<th rowspan="2">some title</th>
+				<td>something8</td>
+				<td rowspan="2">something6</td>
+				<td>something3</td>
+			</tr>
+			<tr>
+				<!--have the same title as above -->
+				<!--space taken by row above -->
+				<td>something4</td>
+				<td>something3</td>
+				
+			</tr>
+			<tr>
+				<th>title</th>
+				<td>something3</td>
+				<td>something3</td>
+				<td>something4</td>
+				
+			</tr>
+		</table>
+		<br>
+		<table border="1">
+			<caption>header for the whole table</caption>
+			<thead>
+				<tr>
+					<th></th>
+					<th scope="col">header1</th>
+					<th scope="col">header2</th>
+					<th scope="col">header3</th>
+				
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row" rowspan="2">some title</th>
+					<td>5</td>
+					<td>4</td>
+					<td>3</td>
+				
+				</tr>
+				<tr>
+					<!--have the same title as above -->
+					<td>4</td>
+					<td>4</td>
+					<td>6</td>
+					
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+				<td colspan="2"></td>
+				<td>total:</td>
+				<td>19</td>
+				
+			</tr>
+			</tfoot>
+		</table>
 	</body>
 </html>
 	
