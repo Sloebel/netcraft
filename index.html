@@ -12,6 +12,81 @@
 		<h4>change for checking if the password is saved</h4>
 		<!-- some comment -->
 
+		<!-- Form class-->
+			<h3>Form Class</h3>
+			<form action="test.html" method="Get"><!--method default is 'Get'-->
+				<fieldset>
+					<fieldset>
+						<legend>Personal information</legend>
+						<div>
+					        <label for="name">User Name:</label><!-- the for att gives us the option to get focus on the input cell by the coresponding id -->
+					        <input type="text" id="name" name="name" value="" placeholder="User Name"/>
+					    </div>
+
+					    <div>
+					        <label for="pass">Password:</label>
+					        <input type="password" id="pass" name="pass" value="" placeholder="Password"/>
+					    </div>
+
+					    <div>
+					        <label for="mail">E-mail:</label>
+					        <input type="email" id="mail" placeholder="Your email" />
+					    </div>
+					</fieldset>
+
+				    <fieldset>
+						<legend>Your Comment</legend>
+						<div>
+					        <label for="msg">Message:</label>
+					        <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Your Message Here"></textarea>
+					    </div>	
+					</fieldset>
+
+					<div>
+						<input type="checkbox" id="accpet" name="accpet">
+						<label for="accpet">Please accept the rules</label>
+					</div>
+
+					<div>
+						<input type="radio" id="radio1" name="radio" value="1">
+						<label for="radio1">choose 1</label>
+
+						<input type="radio" id="radio2" name="radio" value="2" checked="">
+						<label for="radio2">choose 2</label>
+
+						<input type="radio" id="radio3" name="radio" value="3">
+						<label for="radio3">choose 3</label>
+					</div>
+
+					<div>
+						<input type="range">
+					</div>
+
+					<div>
+						<input type="date">
+					</div>
+
+					<div>
+						<label for="myFruit">Pick a fruit</label>
+					    <select id="myFruit" name="fruit">
+					      <!-- There is a trick here you think you'll pick
+					         a banana but you'll eat an orange >:-) -->
+					      <option value="orange">Banana</option>
+					      <option>Cherry</option>
+					      <optgroup label="berries">
+					        <option>Blueberry</option>
+					        <option>Raspberry</option>
+					        <option>Strawberry</option>
+					      </optgroup>
+					    </select>
+					</div>
+					<button type="submit"><b>Login</b></button><!-- by default button is type=submit -->
+				</fieldset>
+			</form>
+			
+
+		
+
 		<p>Sooner or later, one of your teammates will probably also share his changes on your 
 		<q cite="--from here">some quotes from WIKI </q>
 		
@@ -81,7 +156,7 @@
 			</thead>
 			<tbody>
 				<tr>
-					<th scope="row" rowspan="2">some title</th>
+					<th scope="" rowspan="2">some title</th>
 					<td>5</td>
 					<td>4</td>
 					<td>3</td>
@@ -106,4 +181,3 @@
 		</table>
 	</body>
 </html>
-	
