@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    
+}
+
+td {
+	height: 70px;
+	width: 70px;
+	background: black;
+}
+.brow,
+.brow + td,
+.brow + td + td {
+	background: grey;
+}
+
+tr:nth-child(4) > td:not([data-not-eye]) {
+	background: blue;
+}
+
+tr:nth-child(5) > td:empty,
+tr:nth-child(6) > td:empty,
+td[data-foo*="baz"]{
+	background: #FF00FF;
+}
+
+td[data-foo*="smile"],
+tr:nth-child(8) > td:nth-child(5n+3),
+ tr:nth-child(9) > td:not(:empty) {
+	background: red;
+}
+
